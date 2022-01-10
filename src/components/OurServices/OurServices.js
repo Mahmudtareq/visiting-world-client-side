@@ -4,7 +4,7 @@ import './OurServices.css';
 const OurServices = () => {
     const [services , setServices] = useState([])
     useEffect(()=>{
-        fetch('https://arcane-atoll-13935.herokuapp.com/services')
+        fetch('./services.json')
         .then(res =>res.json())
         .then(data=>setServices(data));
 
